@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    background: #363646;
+    padding: 15px 0;
+}
+
+.header>div {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: flex;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    border-bottom: 1px solid red;
+}
+
+.bg-brightness {
+    filter: brightness(50%);
+    filter: blur(100%);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.bg-intro {
+    background-image: url('https://www.elsetge.cat/myimg/f/50-506999_dark-animals-grayscale-lions-black-background-lion-you.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-info {
+    padding: 160px 0;
+    text-align: center;
+}
+
+.bg-info h1 {
+    color: #fff;
+    font-size: 3em;
+    letter-spacing: 0.8em;
+}
+
+.bg-info h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #fff;
+    margin: 20px auto;
+}
+
+.bg-intro p {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.125em;
+    margin-top: 20px;
+}
+
+.bg-intro .btn {
+    width: 220px;
+    margin-top: 60px;
+    background: none;
+    color: #fff;
+    padding: 15px 0;
+    border: 1px solid 353546;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.bg-intro .btn:hover {
+    background: #363646;
+    border: 1px solid #363646;
+    color: #fff;
+    box-shadow: 1px 1px 1px 2px #363646;
+}
+
+.cont {
+    padding: 60px 0;
+}
+
+.cont h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cont h2::before {
+    content: '';
+    width: 10px;
+    height: 3px;
+    border: 1px solid #363646;
+    margin-right: 10px;
+}
+
+.content p {
+    background: #363646;
+    font-size: 1.125em;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    position: relative;
+    top: -25px;
+}
+
+.content {
+    margin: 0 20px;
+}
+
+.content {
+    flex: 1 1 200px;
+}
+
+.content img {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #363646;
+}
+
+.info {
+    padding: 60px 0;
+    background: #252525;
+}
+
+.info h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.info h2::before {
+    content: '';
+    width: 10px;
+    height: 3px;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+
+.info-content {
+    display: flex;
+}
+
+.info-content:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.info-content>div {
+    flex: 1 1 50%;
+    margin: 40px 10px;
+}
+
+.info-text p {
+    color: #fff;
+    font-size: 1.125em;
+    line-height: 1.4em;
+    align-self: end;
+}
+
+.info-img img {
+    box-shadow: 0 0 0 1px #fff;
+}
+
+.contact {
+    padding: 60px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #353546;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.contact h2::before {
+    content: '';
+    width: 10px;
+    height: 3px;
+    border: 1px solid #353546;
+    margin-right: 10px;
+}
+
+.container>form {
+    margin: 0 auto;
+    flex: 1 1 50%;
+    margin: 0 10px;
+}
+
+.contact-info {
+    margin: 0 10px;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 80%;
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 40px;
+}
+
+.form textarea {
+    width: 80%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.form .btn {
+    margin-top: 40px;
+    width: 220px;
+    height: 40px;
+    border: none;
+    background: #353546;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form .btn:hover {
+    border: 1px solid red;
+}
+
+.contact-info h3 {
+    margin-top: 40px;
+}
+
+.contact-info img {
+    width: 200px;
+    margin-top: 40px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #363646;
+}
+
+.contact-info p {
+    max-width: 200px;
+    margin-top: 10px;
+    line-height: 1.4em;
+}
+
+.footer {
+    padding: 60px 0;
+    background: #353546;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 1.125em;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: red;
+}
+
+.social {
+    list-style-type: none;
+    display: flex;
+}
+
+.social img {
+    width: 40px;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #363646, 0 0 0 3px #fff;
+}
+
+.social img:hover {
+    box-shadow: 0 0 0 1px red, 0 0 0 3px red;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container>form {
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    .form input[type="text"],
+    .form input[type="email"],
+    .form textarea {
+        width: 90%;
+    }
+    .contact-info {
+        width: 30%;
+        margin: 0 10px;
+    }
+    .contact-info h3 {
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .social {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .menu {
+        margin: 0;
+    }
+    .bg-info h1 {
+        font-size: 2em;
+        letter-spacing: 0.8em;
+    }
+    .info-content {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .info-content:nth-child(2) {
+        flex-direction: column;
+    }
+    .info-content p {
+        max-width: 300px;
+    }
+    .container>form {
+        flex-direction: column;
+    }
+    .form input[type="text"],
+    .form input[type="email"],
+    .form textarea {
+        width: 100%;
+    }
+    .contact-info {
+        width: 100%;
+        margin: 0 20px;
+    }
+    .contact-info p {
+        margin: 20px auto;
+    }
+    .contact-info img {
+        margin: 20px auto;
+    }
+    .contact-info h3 {
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .social {
+        margin: 20px auto;
+    }
+}
